@@ -1,0 +1,113 @@
+.b-topnav{
+    padding: em(9) 0 em(11);
+    $hover-color: #f26522;
+    width: 100%;
+    float: left;
+    &__list{
+        $font-size: 13;
+        white-space: nowrap;
+        width: 100%;
+        float: left;
+        > li{
+            display: inline-block;
+            font-size: em($font-size);
+            margin-left:em(33, $font-size);
+            position: relative;
+            float:left;
+            &:first-child{
+                margin-left: 0;
+            }
+            > a{
+                display: block;
+                padding: em(15, $font-size) 0;
+                &:hover{
+                    color: $hover-color;
+                }
+            }
+        }
+        > li.current{
+            > a{
+                color: $hover-color;
+                text-decoration: none;
+                cursor: default;
+            }
+        }
+        > .compare{
+            float: right;
+            padding-right:em(33, $font-size);
+            > a{
+                position: relative;
+            }
+            .compare__num{
+                border-radius: em(3);
+                font-size: em(11, $font-size);
+                background-color: #f16521;
+                color: #fff;
+                position: absolute;
+                left: 100%;
+                top: 5px;
+                padding: 0 em(4, $font-size);
+            }
+        }
+    }
+    &__submenu{
+        position: absolute;
+        background-color: #fff;
+        box-shadow: 0 1px 5px rgba(0,0,0,.5);
+        top:100%;
+        left: 0;
+        padding: em(10) 0;
+        z-index: 200;
+        display: none;
+        .arr{
+            display: block;
+            width:24px;
+            height: 9px;
+            padding: 4px 4px 0 4px;
+            position: absolute;
+            top: -13px;
+            left: 16px;
+            overflow: hidden;
+            &:before {
+                content: "";
+                display: block;
+                width: 17px;
+                height: 17px;
+                background: #fff;
+                position: absolute;
+                top: 4px;
+                left: 4px;
+                transform: rotate(45deg);
+                z-index: -1;
+                box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+            }
+        }
+        li{
+            list-style: none;
+
+            &:hover{
+                background-color: #0076a3;
+                a{
+                    color: #fff;
+                }
+            }
+            a{
+                $font-size: 12;
+                font-size: $font-size*1px;
+                text-decoration: none;
+                display: block;
+                padding: em(3, $font-size) em(12, $font-size);
+            }
+        }
+    }
+}
+
+.fixed{
+    .b-topnav{
+        &__list{
+            > li{
+                font-size: 12px;
+            }
+        }
+    }
+}

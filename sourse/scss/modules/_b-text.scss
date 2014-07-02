@@ -1,0 +1,44 @@
+.b-text{
+    /*h1{
+        color: #545454;
+        font-family: $secondary__font;
+        $font-size: 34;
+        font-size: em($font-size);
+        padding: 0 0 em(15, $font-size) 0;
+        font-weight: 300;
+    }*/
+    h2{
+        font-family: $secondary__font;
+        font-weight: 300;
+        $font-size: 28;
+        font-size: em($font-size);
+        padding: 0 0 em(15, $font-size) 0;
+
+    }
+    p{
+        $font-size: 14;
+        font-size: em($font-size);
+        line-height: 24/$font-size;
+        padding: 0 0 em(24, $font-size);
+    }
+    ul, ol{
+        padding: em(20) 0 em(20) em(35);
+    }
+    li{
+        color: #626262;
+        $font-size: 14;
+        font-size: em($font-size);
+        list-style-position: inside;
+        padding: em(6, $font-size) 0;
+    }
+    ul li{
+        list-style: none;
+        &:before{
+            content: "—";
+            display: inline-block;
+            padding-right: em(5);
+            vertical-align: middle;
+            margin-top: -1px;
+        }
+    }
+}

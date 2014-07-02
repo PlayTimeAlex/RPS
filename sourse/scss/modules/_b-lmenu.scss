@@ -1,0 +1,68 @@
+.b-lmenu{
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U1ZTdlOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMlIiBzdG9wLWNvbG9yPSIjZjNmM2Y0IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNCUiIHN0b3AtY29sb3I9IiNmNmY2ZjYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI3JSIgc3RvcC1jb2xvcj0iI2VmZjBmMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjIyJSIgc3RvcC1jb2xvcj0iI2U1ZTdlOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNWU1ZTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+) repeat-x;
+    background-size: auto 100%;
+    &__mlink{
+        display: block;
+        $font-size: 14;
+        font-size: em($font-size);
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        padding: em(18, $font-size) 0 em(23, $font-size);
+        text-transform: uppercase;
+        text-align: center;
+        z-index:100;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAACSCAYAAABxGSvUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MEE0RTVDMEJGQTBCMTFFM0E2REE4N0ZFMzcwOTY3OUEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MEE0RTVDMENGQTBCMTFFM0E2REE4N0ZFMzcwOTY3OUEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowQTRFNUMwOUZBMEIxMUUzQTZEQTg3RkUzNzA5Njc5QSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowQTRFNUMwQUZBMEIxMUUzQTZEQTg3RkUzNzA5Njc5QSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PnjyrI0AAAGISURBVHja7FjLksMwCEPe/v8nR3vpIc36IWE8e6lnemqIJBCYScT3HDp4/6TT3Le3B9JZBAllG2GJ0pyUblHaLhxKCwcH5anh/hDLsoQJioWAGQKy/QBVw7kWfU3ezvd/LLE3XC/B6Wm70nCC7gFw7B1qYBNSyxkly0sY1AQrBKj9sGXvIcqM0hChVWfpg1rroISbJUtDuG6F0w894VDSKiG0fxUN1RpwNMDVEFkNcAtXa77Y0ZCardK4T40ZKNM7RUm+UMK555xFF8qS+GfhOrrdo2z3lgO4uEEl0RghULmjewhUNfD2MFcBVKiMECRKdFDagztVDRKdHqVlcArhegRZGtgp5DKAKy9dmSzJOnqipUrbbp0FsaQOl0prhsCMl6gi0MkSXbda1ohV1ZtDZ7uBwh0CUvGa023H7C1N79ixBstnqzTIIpOl9KUoabBXB9uto+Znib3DEd6cxWS0zdChdLYOsSOaioaSrVJKa+2i+1OxSrOUUnrRtdNqnbOf4r/nyPkVYABnAcsFYToNKwAAAABJRU5ErkJggg==);
+        background-repeat: no-repeat;
+        background-position: left center;
+        position: relative;
+        &_first{
+            background-image: none;
+        }
+    }
+    &__item{
+        width: 25%;
+        display: block;
+        float: left;
+        position: relative;
+        &:hover{
+            box-shadow: 0 0 4px rgba(0,0,1,.55);
+        }
+    }
+    &__item:hover &__mlink{
+        background-color: #f0f0f0;
+        text-decoration: none;
+    }
+    &__micon{
+        display: block;
+        margin: 0 auto;
+        font-size: em(48, 14);
+        margin-bottom: em(1, 14);
+    }
+    &__sub{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #f0f0f0;
+        box-shadow: 0 0 4px rgba(0,0,1,.55);
+        z-index: 80;
+        display: none;
+        a{
+            text-decoration: none;
+            $font-size: 14;
+            font-size: em($font-size);
+            display: block;
+            padding: em(11, $font-size) em(24, $font-size);
+            &:hover{
+                background: $base__link-color;
+                color: #fff;
+            }
+        }
+    }
+    &__sub-item{
+        display: block;
+    }
+    &__item:hover &__sub{
+        display: block;
+    }    
+}

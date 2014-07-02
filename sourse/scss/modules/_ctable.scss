@@ -1,0 +1,60 @@
+.ctable{
+    width: 100%;
+    font-size: $base__font-size*1px;
+    border-bottom: 1px solid #c7c7c7;
+    td {
+        $font-size: 14;
+        font-size: em($font-size);
+        color: #626262;
+        padding: em(13, $font-size) em(10, $font-size) em(12, $font-size);
+        box-sizing: border-box;
+        vertical-align: top;
+        border-top:1px solid #c7c7c7;
+        line-height: 24/$font-size;
+        width: 23.666%;
+        &:first-child {
+            width: 28%;
+            font-weight: bold;
+            padding-left: em(22, $font-size);
+        }
+        &:last-child{
+            padding-right: 0;
+        }
+    }
+    tr:nth-child(even) td {
+        background: #fdf6f3;
+    }
+    &_gray tr:nth-child(even) td{
+        background-color: #eeeeee;
+    }
+    tr:first-child td{
+        border-top: 0;
+    }
+    &__sub{
+        font-size:$base__font-size*1px;
+        width: 98.3%;
+        margin-left: 1.7%;
+        td{
+            padding-top: 0;
+            padding-bottom: 0;
+            font-weight: normal;
+            border-top-style: dashed;
+            &:first-child {
+                width: 24.1%;
+                font-weight: normal;
+                padding-left: 0;
+            }
+        }
+        tr:first-child td{
+            border: 0;
+        }
+        tr:nth-child(even) td {
+            background: transparent;
+        }
+    }
+}
+.b-compare__table{
+    tr:first-child td{
+        border-top: 1px solid #c7c7c7;
+    }
+}

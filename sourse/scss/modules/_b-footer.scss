@@ -1,0 +1,53 @@
+.b-footer{
+    background:#eeeeee;
+    padding: em(45) 0 em(40);
+    position: relative;
+    .container{
+        overflow: hidden;
+    }
+    &:after{
+        content:"";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-bottom:em(60) solid #b3b5b5;
+        border-left: em(60) solid transparent;
+    }
+    &__logo{
+        width:em(127);
+        max-width: 100%;
+        display: block;
+    }
+    &__copyrights{
+        $font-size: 12;
+        font-size: em($font-size);
+        color: #7a7a7a;
+        padding: em(4, $font-size) 0 0;
+    }
+    &__menu{
+        
+    }
+    &__menu-item{
+        display: inline-block;
+        &:after{
+            content:"|";
+            $font-size: 12;
+            font-size: em($font-size);
+            color: #7a7a7a;
+            display: inline-block;
+            margin-left: em(3, $font-size);
+        }
+        &:last-child:after{
+            display: none;
+        }
+        > a{
+            font-size: em(12);
+            color: #7a7a7a;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}

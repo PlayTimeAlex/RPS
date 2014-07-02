@@ -1,0 +1,122 @@
+.b-catalog{
+    &__table{
+        width: 100%;
+        border-bottom: 1px solid #e2e2e2;
+        > thead > tr > th{
+            color: #888;
+            font-style: italic;
+            border-bottom: 1px solid #e2e2e2;
+            border-top: 1px solid #e2e2e2;
+            vertical-align: middle;
+            padding: em(8) 10px em(8) 0;
+            box-sizing: border-box;
+            text-align: left;
+            &:first-child{
+                color: #545454;
+                font-size: em(12);
+                font-weight: bold;
+                padding-left: 10px;
+            }
+            &:nth-child(2){
+                border-right: 1px solid #e2e2e2;
+                color: #545454;
+                font-size: em(12);
+                font-weight: bold;
+            }
+            &:nth-child(3){
+                text-align: right;
+            }
+            &:nth-child(4){
+                text-align: right;
+            }
+            &:nth-child(5){
+                text-align: right;
+            }
+            &:nth-child(6){
+                padding-left: 20px;
+            }
+            &:last-child{
+                padding-right: 0;
+            }
+        }
+        > tbody > tr:first-child > td{
+            padding-top: em(29, 12);
+        }
+        > tbody > tr:last-child > td{
+            padding-bottom: em(16, 12);
+        }
+        > tbody > tr:hover{
+            > td{
+                background-color:#eeeeee;
+                cursor: default;
+                color: #464646;
+                &:first-child{
+                    color: #05506c;
+                }
+                .b-catalog__ilink{
+                    text-decoration: underline;
+                }
+            }
+
+        }
+        > tbody > tr > td{
+            $font-size: 12;
+            font-size: em($font-size);
+            padding: em(8, $font-size) 10px em(8, $font-size) 0;
+            box-sizing: border-box;
+            vertical-align: middle;
+            transition: background-color 0.3s ease;
+            color: #898989;
+            &:first-child{
+                padding-left: 10px;
+                width: 22.7%;
+            }
+            &:nth-child(2){
+                border-right: 1px solid #e2e2e2;
+                width: 16.7%;
+                font-style: italic;
+            }
+            &:nth-child(3){
+                width: 10.7%;
+                text-align: right;
+            }
+            &:nth-child(4){
+                width: 14%;
+                text-align: right;
+            }
+            &:nth-child(5){
+                width: 9.5%;
+                text-align: right;
+            }
+            &:nth-child(6){
+                width: 19.5%;
+                padding-left: 20px;
+            }
+            &:last-child{
+                padding-right: 0;
+            }
+        }
+    }
+    &__popup{
+        padding: em(18) em(25) em(33);
+        font-size: $base__font-size*1px;
+        box-sizing: border-box;
+        width: em(685);
+    }
+    &__popup-i{
+        float: left;
+        width: em(230);
+        padding-right: em(25);
+        text-align: center;
+        img{
+            display: block;
+            margin: em(15) auto;
+        }
+    }
+    &__popup-t{
+        overflow: hidden;
+    }
+    &__ilink{
+        text-decoration: none;
+    }
+}
