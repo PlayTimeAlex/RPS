@@ -1,0 +1,26 @@
+.b-breadcrumb{
+    li{
+        $font-size: 12;
+        font-size: em($font-size);
+        color: #000;
+        display: inline-block;
+        line-height: 1;
+        padding: em(33, $font-size) 0 em(20, $font-size);
+        &:after{
+            content:"»";
+            display: inline-block;
+            margin-left: 0.2em;
+        }
+        /*&:last-child:after{
+            display: none;
+        }*/
+    }
+    a{
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px dotted $base__link-color;
+        &:hover{
+            border-bottom: 0;
+        }
+    }
+}

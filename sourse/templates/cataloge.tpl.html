@@ -1,0 +1,603 @@
+@@include('blocks/_b-header.html')
+<div class="pr-content">
+<div class="container">
+<div class="row">
+<aside class="span3">
+    <div class="b-widget">
+        <h3 class="b-widget__title">Продукция</h3>
+        <ul class="b-wmenu">
+            <li class="b-wmenu__item b-wmenu__item_current"><a href="#">Каталог</a></li>
+            <li class="b-wmenu__item"><a href="#">Дополнительное оборудование</a></li>
+        </ul>
+    </div>
+</aside>
+<div class="span9">
+<h1 class="b-page__title">Каталог</h1>
+
+<div class="b-filter">
+    <form action="/">
+        <div class="b-filter__item">
+            <span class="b-filter__item-text">Производитель:</span>
+
+            <div class="b-filter__dropdown" style="width:120px;">
+                <input class="b-filter__dropdown-input" type="hidden"/>
+
+                <div class="b-filter__dropdown-text b-filter__dropdown-l">Все</div>
+                <ul class="b-filter__dropdown-list">
+                    <li class="b-filter__dropdown-ta"></li>
+                    <li data-val="value" class="b-filter__dropdown-item">Все</li>
+                    <li data-val="value1" class="b-filter__dropdown-item">GEKO</li>
+                    <li data-val="value2" class="b-filter__dropdown-item">RPS</li>
+                    <li data-val="value3" class="b-filter__dropdown-item">Китай</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="b-filter__item">
+            <span class="b-filter__item-text">Мощноть:</span>
+
+            <div class="b-filter__dropdown b-filter__dropdown_checkbox" style="width:75px;">
+                <input class="b-filter__dropdown-input" type="hidden"/>
+
+                <div class="b-filter__dropdown-text b-filter__dropdown-l">Все</div>
+                <div class="b-filter__dropdown-list">
+                    <div class="b-filter__dropdown-ta"></div>
+                    <div class="row">
+                        <div class="span4">
+                            <label class="b-form__ch-label b-form__ch-label_block"><input type="checkbox" value="16"/>16</label>
+                            <label class="b-form__ch-label b-form__ch-label_block"><input type="checkbox" value="24"/>24</label>
+                            <label class="b-form__ch-label b-form__ch-label_block"><input type="checkbox" value="32"/>32</label>
+                            <label class="b-form__ch-label b-form__ch-label_block"><input type="checkbox" value="48"/>48</label>
+                        </div>
+                        <div class="span4">
+                            <label class="b-form__ch-label b-form__ch-label_block"><input type="checkbox" value="68"/>68</label>
+                            <label class="b-form__ch-label b-form__ch-label_block"><input type="checkbox" value="84"/>84</label>
+                            <label class="b-form__ch-label b-form__ch-label_block"><input type="checkbox" value="100"/>100</label>
+                            <label class="b-form__ch-label b-form__ch-label_block"><input type="checkbox" value="120"/>120</label>
+                        </div>
+                        <div class="span4">
+                            <label class="b-form__ch-label b-form__ch-label_block"><input type="checkbox" value="160"/>160</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="b-filter__item-text">кВт</span>
+        </div>
+        <div class="b-filter__item">
+            <button type="submit" class="pr-button">Отфильтровать</button>
+        </div>
+    </form>
+</div>
+<table class="b-catalog__table">
+<thead>
+<tr>
+    <th>Модель агрегата</th>
+    <th>Тип двигателя</th>
+    <th>Расход л/ч</th>
+    <th>Емкость бака, л</th>
+    <th>Шум дБ</th>
+    <th>Габариты<br/>(L x B x H) мм</th>
+    <th>Масса кг</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>
+        <a class="b-catalog__ilink" href="#">Geko 20010 ED-S/DEDA</a>
+
+        <div class="b-catalog__popup cl-popup">
+            <span class="cl-popup__a"></span>
+
+            <div class="b-catalog__popup-i">
+                <img src="images/content/catalog-prev.jpg" alt="Geko 20010 ED-S/DEDA"/>
+                <a class="pr-button">Подробней</a>
+            </div>
+            <div class="b-catalog__popup-t">
+                <table class="ctable">
+                    <tr>
+                        <td class="ctable__hassub" colspan="4">
+                            <table class="ctable__sub">
+                                <tr>
+                                    <td>Основная</td>
+                                    <td>48 кВт</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Выходное напряжение</td>
+                        <td>220/380 В</td>
+                    </tr>
+                    <tr>
+                        <td>Частота тока</td>
+                        <td>50 Гц</td>
+                    </tr>
+                    <tr>
+                        <td class="ctable__hassub" colspan="4">
+                            Уровень шума
+                            <table class="ctable__sub">
+                                <tr>
+                                    <td>открытая на раме</td>
+                                    <td>93 дБ(А)</td>
+                                </tr>
+                                <tr>
+                                    <td>в шумопоглощающем капоте</td>
+                                    <td>64 дБ(А)</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </td>
+    <td>DEUTZ F3M2011</td>
+    <td>3,9</td>
+    <td>62</td>
+    <td>86</td>
+    <td>1650x800x1200</td>
+    <td>620</td>
+</tr>
+<tr>
+    <td>
+        <a class="b-catalog__ilink" href="#">Geko 20010 ED-S/DEDA</a>
+
+        <div class="b-catalog__popup cl-popup">
+            <span class="cl-popup__a"></span>
+
+            <div class="b-catalog__popup-i">
+                <img src="images/content/catalog-prev.jpg" alt="Geko 20010 ED-S/DEDA"/>
+                <a class="pr-button">Подробней</a>
+            </div>
+            <div class="b-catalog__popup-t">
+                <table class="ctable ">
+                    <tr>
+                        <td class="ctable__hassub" colspan="4">
+                            <table class="ctable__sub">
+                                <tr>
+                                    <td>Основная</td>
+                                    <td>48 кВт</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Выходное напряжение</td>
+                        <td>220/380 В</td>
+                    </tr>
+                    <tr>
+                        <td>Частота тока</td>
+                        <td>50 Гц</td>
+                    </tr>
+                    <tr>
+                        <td class="ctable__hassub" colspan="4">
+                            Уровень шума
+                            <table class="ctable__sub">
+                                <tr>
+                                    <td>открытая на раме</td>
+                                    <td>93 дБ(А)</td>
+                                </tr>
+                                <tr>
+                                    <td>в шумопоглощающем капоте</td>
+                                    <td>64 дБ(А)</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </td>
+    <td>DEUTZ F3M2011</td>
+    <td>3,9</td>
+    <td>62</td>
+    <td>86</td>
+    <td>1650x800x1200</td>
+    <td>620</td>
+</tr>
+<tr>
+    <td>
+        <a class="b-catalog__ilink" href="#">Geko 20010 ED-S/DEDA</a>
+
+        <div class="b-catalog__popup cl-popup">
+            <span class="cl-popup__a"></span>
+
+            <div class="b-catalog__popup-i">
+                <img src="images/content/catalog-prev.jpg" alt="Geko 20010 ED-S/DEDA"/>
+                <a class="pr-button">Подробней</a>
+            </div>
+            <div class="b-catalog__popup-t">
+                <table class="ctable ">
+                    <tr>
+                        <td class="ctable__hassub" colspan="4">
+                            <table class="ctable__sub">
+                                <tr>
+                                    <td>Основная</td>
+                                    <td>48 кВт</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Выходное напряжение</td>
+                        <td>220/380 В</td>
+                    </tr>
+                    <tr>
+                        <td>Частота тока</td>
+                        <td>50 Гц</td>
+                    </tr>
+                    <tr>
+                        <td class="ctable__hassub" colspan="4">
+                            Уровень шума
+                            <table class="ctable__sub">
+                                <tr>
+                                    <td>открытая на раме</td>
+                                    <td>93 дБ(А)</td>
+                                </tr>
+                                <tr>
+                                    <td>в шумопоглощающем капоте</td>
+                                    <td>64 дБ(А)</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </td>
+    <td>DEUTZ F3M2011</td>
+    <td>3,9</td>
+    <td>62</td>
+    <td>86</td>
+    <td>1650x800x1200</td>
+    <td>620</td>
+</tr>
+<tr>
+    <td>
+        <a class="b-catalog__ilink" href="#">Geko 20010 ED-S/DEDA</a>
+
+        <div class="b-catalog__popup cl-popup">
+            <span class="cl-popup__a"></span>
+
+            <div class="b-catalog__popup-i">
+                <img src="images/content/catalog-prev.jpg" alt="Geko 20010 ED-S/DEDA"/>
+                <a class="pr-button">Подробней</a>
+            </div>
+            <div class="b-catalog__popup-t">
+                <table class="ctable ">
+                    <tr>
+                        <td class="ctable__hassub" colspan="4">
+                            <table class="ctable__sub">
+                                <tr>
+                                    <td>Основная</td>
+                                    <td>48 кВт</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Выходное напряжение</td>
+                        <td>220/380 В</td>
+                    </tr>
+                    <tr>
+                        <td>Частота тока</td>
+                        <td>50 Гц</td>
+                    </tr>
+                    <tr>
+                        <td class="ctable__hassub" colspan="4">
+                            Уровень шума
+                            <table class="ctable__sub">
+                                <tr>
+                                    <td>открытая на раме</td>
+                                    <td>93 дБ(А)</td>
+                                </tr>
+                                <tr>
+                                    <td>в шумопоглощающем капоте</td>
+                                    <td>64 дБ(А)</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </td>
+    <td>DEUTZ F3M2011</td>
+    <td>3,9</td>
+    <td>62</td>
+    <td>86</td>
+    <td>1650x800x1200</td>
+    <td>620</td>
+</tr>
+<tr>
+    <td>
+        <a class="b-catalog__ilink" href="#">Geko 20010 ED-S/DEDA</a>
+
+        <div class="b-catalog__popup cl-popup">
+            <span class="cl-popup__a"></span>
+
+            <div class="b-catalog__popup-i">
+                <img src="images/content/catalog-prev.jpg" alt="Geko 20010 ED-S/DEDA"/>
+                <a class="pr-button">Подробней</a>
+            </div>
+            <div class="b-catalog__popup-t">
+                <table class="ctable ">
+                    <tr>
+                        <td class="ctable__hassub" colspan="4">
+                            <table class="ctable__sub">
+                                <tr>
+                                    <td>Основная</td>
+                                    <td>48 кВт</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Выходное напряжение</td>
+                        <td>220/380 В</td>
+                    </tr>
+                    <tr>
+                        <td>Частота тока</td>
+                        <td>50 Гц</td>
+                    </tr>
+                    <tr>
+                        <td class="ctable__hassub" colspan="4">
+                            Уровень шума
+                            <table class="ctable__sub">
+                                <tr>
+                                    <td>открытая на раме</td>
+                                    <td>93 дБ(А)</td>
+                                </tr>
+                                <tr>
+                                    <td>в шумопоглощающем капоте</td>
+                                    <td>64 дБ(А)</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </td>
+    <td>DEUTZ F3M2011</td>
+    <td>3,9</td>
+    <td>62</td>
+    <td>86</td>
+    <td>1650x800x1200</td>
+    <td>620</td>
+</tr>
+<tr>
+    <td>
+        <a class="b-catalog__ilink" href="#">Geko 20010 ED-S/DEDA</a>
+
+        <div class="b-catalog__popup cl-popup">
+            <span class="cl-popup__a"></span>
+
+            <div class="b-catalog__popup-i">
+                <img src="images/content/catalog-prev.jpg" alt="Geko 20010 ED-S/DEDA"/>
+                <a class="pr-button">Подробней</a>
+            </div>
+            <div class="b-catalog__popup-t">
+                <table class="ctable ">
+                    <tr>
+                        <td class="ctable__hassub" colspan="4">
+                            <table class="ctable__sub">
+                                <tr>
+                                    <td>Основная</td>
+                                    <td>48 кВт</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Выходное напряжение</td>
+                        <td>220/380 В</td>
+                    </tr>
+                    <tr>
+                        <td>Частота тока</td>
+                        <td>50 Гц</td>
+                    </tr>
+                    <tr>
+                        <td class="ctable__hassub" colspan="4">
+                            Уровень шума
+                            <table class="ctable__sub">
+                                <tr>
+                                    <td>открытая на раме</td>
+                                    <td>93 дБ(А)</td>
+                                </tr>
+                                <tr>
+                                    <td>в шумопоглощающем капоте</td>
+                                    <td>64 дБ(А)</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </td>
+    <td>DEUTZ F3M2011</td>
+    <td>3,9</td>
+    <td>62</td>
+    <td>86</td>
+    <td>1650x800x1200</td>
+    <td>620</td>
+</tr>
+<tr>
+    <td>
+        <a class="b-catalog__ilink" href="#">Geko 20010 ED-S/DEDA</a>
+
+        <div class="b-catalog__popup cl-popup">
+            <span class="cl-popup__a"></span>
+
+            <div class="b-catalog__popup-i">
+                <img src="images/content/catalog-prev.jpg" alt="Geko 20010 ED-S/DEDA"/>
+                <a class="pr-button">Подробней</a>
+            </div>
+            <div class="b-catalog__popup-t">
+                <table class="ctable ">
+                    <tr>
+                        <td class="ctable__hassub" colspan="4">
+                            <table class="ctable__sub">
+                                <tr>
+                                    <td>Основная</td>
+                                    <td>48 кВт</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Выходное напряжение</td>
+                        <td>220/380 В</td>
+                    </tr>
+                    <tr>
+                        <td>Частота тока</td>
+                        <td>50 Гц</td>
+                    </tr>
+                    <tr>
+                        <td class="ctable__hassub" colspan="4">
+                            Уровень шума
+                            <table class="ctable__sub">
+                                <tr>
+                                    <td>открытая на раме</td>
+                                    <td>93 дБ(А)</td>
+                                </tr>
+                                <tr>
+                                    <td>в шумопоглощающем капоте</td>
+                                    <td>64 дБ(А)</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </td>
+    <td>DEUTZ F3M2011</td>
+    <td>3,9</td>
+    <td>62</td>
+    <td>86</td>
+    <td>1650x800x1200</td>
+    <td>620</td>
+</tr>
+<tr>
+    <td>
+        <a class="b-catalog__ilink" href="#">Geko 20010 ED-S/DEDA</a>
+
+        <div class="b-catalog__popup cl-popup">
+            <span class="cl-popup__a"></span>
+
+            <div class="b-catalog__popup-i">
+                <img src="images/content/catalog-prev.jpg" alt="Geko 20010 ED-S/DEDA"/>
+                <a class="pr-button">Подробней</a>
+            </div>
+            <div class="b-catalog__popup-t">
+                <table class="ctable ">
+                    <tr>
+                        <td class="ctable__hassub" colspan="4">
+                            <table class="ctable__sub">
+                                <tr>
+                                    <td>Основная</td>
+                                    <td>48 кВт</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Выходное напряжение</td>
+                        <td>220/380 В</td>
+                    </tr>
+                    <tr>
+                        <td>Частота тока</td>
+                        <td>50 Гц</td>
+                    </tr>
+                    <tr>
+                        <td class="ctable__hassub" colspan="4">
+                            Уровень шума
+                            <table class="ctable__sub">
+                                <tr>
+                                    <td>открытая на раме</td>
+                                    <td>93 дБ(А)</td>
+                                </tr>
+                                <tr>
+                                    <td>в шумопоглощающем капоте</td>
+                                    <td>64 дБ(А)</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </td>
+    <td>DEUTZ F3M2011</td>
+    <td>3,9</td>
+    <td>62</td>
+    <td>86</td>
+    <td>1650x800x1200</td>
+    <td>620</td>
+</tr>
+<tr>
+    <td>
+        <a class="b-catalog__ilink" href="#">Geko 20010 ED-S/DEDA</a>
+
+        <div class="b-catalog__popup cl-popup">
+            <span class="cl-popup__a"></span>
+
+            <div class="b-catalog__popup-i">
+                <img src="images/content/catalog-prev.jpg" alt="Geko 20010 ED-S/DEDA"/>
+                <a class="pr-button">Подробней</a>
+            </div>
+            <div class="b-catalog__popup-t">
+                <table class="ctable ">
+                    <tr>
+                        <td class="ctable__hassub" colspan="4">
+                            <table class="ctable__sub">
+                                <tr>
+                                    <td>Основная</td>
+                                    <td>48 кВт</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Выходное напряжение</td>
+                        <td>220/380 В</td>
+                    </tr>
+                    <tr>
+                        <td>Частота тока</td>
+                        <td>50 Гц</td>
+                    </tr>
+                    <tr>
+                        <td class="ctable__hassub" colspan="4">
+                            Уровень шума
+                            <table class="ctable__sub">
+                                <tr>
+                                    <td>открытая на раме</td>
+                                    <td>93 дБ(А)</td>
+                                </tr>
+                                <tr>
+                                    <td>в шумопоглощающем капоте</td>
+                                    <td>64 дБ(А)</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </td>
+    <td>DEUTZ F3M2011</td>
+    <td>3,9</td>
+    <td>62</td>
+    <td>86</td>
+    <td>1650x800x1200</td>
+    <td>620</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+@@include('blocks/_b-footer.html')

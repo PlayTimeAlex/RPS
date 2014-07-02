@@ -1,0 +1,119 @@
+@@include('blocks/_b-header.html')
+<div class="pr-content">
+    <div class="container">
+        <div class="row">
+            <aside class="span3">
+                <div class="b-widget">
+                    <ul class="b-imenu">
+                        <li class="b-imenu__item">
+                            <h3 class="b-imenu__title">Объекты</h3>
+                            <a class="b-imenu__link" href="#">Geko 20010 ED-S/DEDA</a>
+
+                            <div class="b-imenu__price">1 100 000 руб</div>
+                            <ul class="b-isubmenu">
+                                <li class="b-isubmenu__item">
+                                    <h3 class="b-isubmenu__title">Доп оборудование</h3>
+                                    <a class="b-imenu__link" href="#">Автоматика/DEDA</a>
+
+                                    <div class="b-imenu__price">1 100 000 руб</div>
+                                </li>
+                                <li class="b-isubmenu__item">
+                                    <a class="b-imenu__link" href="#">GSM-оборудование/DEDA</a>
+
+                                    <div class="b-imenu__price">1 100 000 руб</div>
+                                </li>
+                                <li class="b-isubmenu__item">
+                                    <a class="b-imenu__link" href="#">Подогревы/DEDA</a>
+
+                                    <div class="b-imenu__price">1 100 000 руб</div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="b-imenu__total">
+                            <div class="b-imenu__total-t">Итого</div>
+                            <div class="b-imenu__total-a">3 300 000 руб</div>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <div class="span9">
+                <h1 class="b-page__title">Онлайн заявка</h1>
+
+                <div class="b-form">
+                    <form action="/" class="b-form__t-validate">
+                        <table class="b-form__table">
+                            <tr>
+                                <td class="label"><label class="b-form__label" for="bf-fio">ФИО</label></td>
+                                <td><input type="text" class="b-form__text" id="bf-fio" name="bf-fio"
+                                           required="required"/></td>
+                                <td class="b-form__t-label"></td>
+                            </tr>
+                            <tr>
+                                <td class="label"><label class="b-form__label" for="bf-tel">Телефон</label></td>
+                                <td><input type="tel" class="b-form__text b-form__text_tel" id="bf-tel" name="bf-tel"
+                                           style="width:60%;"/></td>
+                                <td class="b-form__t-label"></td>
+                            </tr>
+                            <tr>
+                                <td class="label"><label class="b-form__label" for="bf-email">Электронная почта</label>
+                                </td>
+                                <td><input type="text" class="b-form__text" id="bf-email" name="bf-email"/></td>
+                                <td class="b-form__t-label"></td>
+                            </tr>
+                            <tr>
+                                <td class="label"><label class="b-form__label" for="bf-city">Город</label></td>
+                                <td><input type="text" class="b-form__text" name="bf-city" id="bf-city"/></td>
+                                <td class="b-form__t-label"></td>
+                            </tr>
+                            <tr>
+                                <td class="label"><label class="b-form__label" for="bf-city">Тип генератора</label></td>
+                                <td><select class="b-form__select">
+                                    <option>Geko 20010 ED-S/DEDA</option>
+                                    <option>Geko 20010 ED-S/DEDA</option>
+                                    <option>Geko 20010 ED-S/DEDA</option>
+                                </select></td>
+                                <td class="b-form__t-label"></td>
+                            </tr>
+                            <tr>
+                                <td class="label"><span class="b-form__label">Дополнительное оборудование</span></td>
+                                <td colspan="2"><label class="b-form__ch-label"><input
+                                        type="checkbox"/>Автоматика</label><label class="b-form__ch-label"><input
+                                        type="checkbox"/>Подогревы</label><label class="b-form__ch-label"><input
+                                        type="checkbox"/>GSM-оборудование</label><label class="b-form__ch-label"><input
+                                        type="checkbox"/>Звукоизоляция</label><label class="b-form__ch-label"><input
+                                        type="checkbox"/>Дополнительные аксессуары</label></td>
+                            </tr>
+                            <tr>
+                                <td class="label"><label class="b-form__label" for="bf-wishes">Пожелания</label></td>
+                                <td><textarea class="b-form__textarea" id="bf-wishes" name="bf-wishes"
+                                              rows="5"></textarea></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <img class="b-form__capcha" src="images/content/capcha.jpg" alt="capcha"
+                                         width="110"/>
+
+                                    <div class="b-form__capcha-f">
+                                        <input class="b-form__text" type="text"/>
+                                        <span class="b-form__capcha-text">Введите защитный код</span>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <button class="pr-button" type="submit">Заказать</button>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('blocks/_b-footer.html')

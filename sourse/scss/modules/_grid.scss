@@ -1,0 +1,35 @@
+.row{
+    width: 100%;
+    &:before,&:after{
+        display: table;
+        content: "";
+        line-height: 0;
+    }
+    &:after{
+        clear: both;
+    }
+    [class*="span"]{
+        display: block;
+        width: 100%;
+        min-height: 1px;
+        box-sizing: border-box;
+        float: left;
+        margin-left: $gutter;
+    }
+    [class*="span"]:first-child{
+        margin-left: 0;
+    }
+    @for $i from 1 through $cols {
+        .span#{$i} {
+            @include cols($i);
+        }
+    }    
+    @for $i from 1 through $cols - 1 {
+        .offset#{$i} {
+            @include offset($i, false);
+            &:first-child{
+                @include offset($i, true);
+            }
+        }
+    }     
+}
