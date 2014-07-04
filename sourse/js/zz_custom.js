@@ -128,7 +128,9 @@
                 clearTimeout(timer);
             }
         }, function(){
-            timer = setTimeout(function(){$('.cl-popup, .b-header__pform, .city-list').stop().hide('fast').removeClass('top');}, 500);
+            if(!$('input:focus', this).length){
+                timer = setTimeout(function(){$('.cl-popup, .b-header__pform, .city-list').stop().hide('fast').removeClass('top');}, 500);
+            }
         });
 
         //filter dropdown
@@ -139,7 +141,7 @@
             $('.b-filter__dropdown-list', parent).hide('fast');
         });
 
-        $('.b-filter__dropdown-l').click(function(){
+        $('.b-filter__dropdown').click(function(){
             var parent = $(this).closest('.b-filter__dropdown');
             $('.b-filter__dropdown-list', parent).show('fast');
             return false;
@@ -186,6 +188,25 @@
 
         $('.anim-scroll').click(function () {
             scrollto_c($(this).attr('href'));
+            return false;
+        });
+
+        $('.scroll-top').click(function () {
+            if($.isFunction($.fn.fullpage.moveTo)){
+                $.fn.fullpage.moveTo(1);
+                $('#scroll').animate({
+                    marginTop: 0
+                }, 300, function () {
+                    setTimeout(function () {
+                        $.fn.fullpage.setAllowScrolling(true);
+                        $('#fp-nav').show('fast');
+                    }, 300);
+                });
+                stopDownFooter = false;
+            } else {
+                scrollto_c($(this).attr('href'));
+                console.log('top3');
+            }
             return false;
         });
 
@@ -248,6 +269,100 @@
             }
             return false;
         });
+
+        //fullpage
+        if($(window).height() > 900 && !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))){
+            if($('#scroll').length) {
+                $('head').append('<style type="text/css">html,body{margin: 0;padding: 0;overflow:hidden;-webkit-tap-highlight-color: rgba(0,0,0,0);</style>');
+                stopDown = false;
+                stopDownFooter = false;
+                $('body').on('mousewheel', function (event) {
+                    if ($('.section.active').index('.section') + 1 == 1) {
+                        if (event.deltaY > 0 && stopDown) {
+                            $('.b-header__bottom').removeClass('fixed').css({'bottom': 0, 'top': 'auto'});
+                            $('#fp-nav').hide('fast');
+                            $('.b-header').animate({
+                                'marginTop': 0
+                            }, 300, function () {
+
+                            });
+                            $.fn.fullpage.setAllowScrolling(false);
+                            stopDown = false;
+                        }
+                        if (event.deltaY < 0 && !stopDown) {
+                            $('.b-header').animate({
+                                'marginTop': -$('.b-header').outerHeight()
+                            }, 300, function () {
+                                $('.b-header__bottom').addClass('fixed').css({'bottom': 'auto', 'top': 0});
+                                $('#fp-nav').show('fast');
+                                $.fn.fullpage.setAllowScrolling(true);
+                            });
+                            stopDown = true;
+                        }
+                    }
+                    if ($('.section.active').index('.section') + 1 == $('.section').length) {
+
+                        var tHeight = $('.b-footer').outerHeight() + $('.pr-top').outerHeight();
+                        if (event.deltaY > 0 && stopDownFooter) {
+                            $('#scroll').animate({
+                                marginTop: 0
+                            }, 300, function () {
+                                setTimeout(function () {
+                                    $.fn.fullpage.setAllowScrolling(true);
+                                    $('#fp-nav').show('fast');
+                                }, 300);
+                            });
+                            stopDownFooter = false;
+                        }
+                        if (event.deltaY < 0 && !stopDownFooter && lastSectionLoaded) {
+                            $('#fp-nav').hide('fast');
+                            $('#scroll').animate({
+                                marginTop: -tHeight
+                            }, 300, function () {
+                                $.fn.fullpage.setAllowScrolling(false);
+                            });
+                            stopDownFooter = true;
+                        }
+                    }
+                });
+
+                $('#scroll').fullpage({
+                    easing: 'linear',
+                    navigation: true,
+
+                    //anchors: ['bc-promo', 'bc-description', 'bc-demo', 'bc-specifications', 'bc-gallery', 'bc-contacts'],
+                    verticalCentered: false,
+                    resize: false,
+                    setAllowScrolling: false,
+                    onLeave: function (index, nextIndex, direction) {
+                        if (index == '1') {
+                            //console.log();
+                            //$('.b-header').css('marginTop', - $('.b-header').outerHeight());
+                        }
+                        if(nextIndex == 1){
+                            $('.pr-top-vert').stop().animate({
+                                opacity: 0
+                            }, 300, function(){
+                                $(this).css('display', 'none');
+                            });
+                        }
+                        if(nextIndex == 2){
+                            $('.pr-top-vert').stop().css('display', 'block').animate({
+                                opacity: 1
+                            }, 300);
+                        }
+                    },
+                    afterLoad: function (anchorLink, index) {
+                        lastSectionLoaded = index == $('.section').length ? true : false;
+                    },
+                    afterRender: function () {
+
+                    }
+                });
+                $.fn.fullpage.setAllowScrolling(false);
+            }
+        }
+
     });
 
     $(window).load(function() {
